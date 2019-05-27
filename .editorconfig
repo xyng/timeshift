@@ -1,0 +1,24 @@
+# http://editorconfig.org/
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false
+
+[{.*rc,*.{json,cson,yml,yaml,toml}}]
+indent_style = space
+indent_size = 2
+
+# Keep `max_line_length = 100` in source code by using your editor's wrap guide or ruler. This
+# ensures readability and maintainability. We do not enforce the rule here because some languages
+# have certain exceptions.
+
+# Exception: In Markdown files do not hard wrap text. Instead, let text flow and enable the editor's
+# soft wrap or word wrap option for better readability.
